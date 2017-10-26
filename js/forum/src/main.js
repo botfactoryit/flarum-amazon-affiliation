@@ -32,7 +32,7 @@ app.initializers.add('botfactoryit-amazon-affiliation', function() {
 		this.props.post.data.attributes.contentHtml = content;
 		
 		function isAmazonProductLink(link) {
-			return (link.match(/\/\/(www\.)?amazon\.(it|com|de|fr)/) && amazonRegex.test(link));
+			return (link.match(/\/\/(www\.)?amazon\.(it|com|de|fr|es)/) && amazonRegex.test(link));
 		}
 	});
 });
